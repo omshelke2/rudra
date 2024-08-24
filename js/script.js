@@ -10,7 +10,7 @@ document.querySelector('#menu-btn').onclick = () =>{
 };
 
 document.querySelector('#search-btn').onclick = () =>{
-   searchForm.classList.toggle('active');
+   window.location.href = "projects.html";
    navbar.classList.remove('active');
    loginForm.classList.remove('active');
 };
@@ -38,6 +38,9 @@ window.onscroll = () =>{
 
 var swiper = new Swiper(".home-slider", {
    loop:true,
+   autoplay: {
+      delay: 5000,
+    },
    grabCursor:true,
    navigation: {
      nextEl: ".swiper-button-next",
@@ -48,6 +51,7 @@ var swiper = new Swiper(".home-slider", {
 var swiper = new Swiper(".reviews-slider", {
    loop:true,
    grabCursor:true,
+   
    spaceBetween: 20,
    breakpoints: {
       640: {
