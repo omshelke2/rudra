@@ -920,6 +920,7 @@ section {
 
 .footer .credit span {
   color: var(--yellow);
+  color: #f5bf23;
 }
 
 @media (max-width: 1200px) {
